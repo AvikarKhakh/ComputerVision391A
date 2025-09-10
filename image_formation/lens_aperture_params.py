@@ -1,7 +1,12 @@
 # Exercise 2: Thin lens & f-numbers
 
+from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
+
+# image folder path (same as in Exercise 1)
+IMAGES_DIR = Path(__file__).parent / "images"
+IMAGES_DIR.mkdir(exist_ok=True)  # make sure folder exists
 
 def thin_lens_zi(f_mm: float, zo_mm: float) -> float:
     # Thin lens formula: 1/f = 1/Zo + 1/Zi
@@ -30,6 +35,7 @@ def plot_both(f_list, f_numbers):
     ax.set_ylabel("Image Distance Zi (mm)") # y-axis label
     ax.set_ylim(1, 3000) # y-axis limits
     ax.set_title("Thin Lens Law") # plot title
+    
     # Allows plot to be read more easily
     ax.grid(True, which="major", linestyle='-', linewidth=0.7)
     ax.grid(True, which="minor", linestyle=':', linewidth=0.4)
@@ -49,7 +55,26 @@ def plot_both(f_list, f_numbers):
     ax.grid(True)
     ax.legend()
 
+    # Mark real lenses as points on the lines
+    lenses = [
+        (24, 1.4),
+        (50, 1.8),
+        (70, 2.8),
+        (200, 2.8),
+        (400, 2.8),
+        (600, 4.0),
+    ]
+    # for loop to plot and annotate each lens
+    for f_mm, N in lenses:
+        D = f_mm / N
+        ax.scatter([f_mm], [D], s=20, color="black", zorder=5)
+
     plt.tight_layout()
+    
+    # Save the figure in images folder for README
+    out_path = IMAGES_DIR / "exercise2_plots.png"
+    plt.savefig(out_path, dpi=200, bbox_inches="tight")
+
     plt.show()
 
 def print_lens_apertures():
