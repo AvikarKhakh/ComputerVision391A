@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # Exercise 1: Affine Transformation
 
 from pathlib import Path
