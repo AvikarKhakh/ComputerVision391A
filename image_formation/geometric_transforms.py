@@ -63,7 +63,15 @@ def main():
     axes[0].imshow(orig_rgb);   axes[0].set_title("Original"); axes[0].axis("off")
     axes[1].imshow(targ_rgb);   axes[1].set_title("Target Example");   axes[1].axis("off")
     axes[2].imshow(affine_rgb); axes[2].set_title("Avikar's Transformation");   axes[2].axis("off")
-    plt.tight_layout(); plt.show()
+    
+    
+    img_dir = Path(__file__).parent / "images"
+    img_dir.mkdir(exist_ok=True)
+    out = img_dir / f"exercise1_all_images.png"
+    fig.savefig(out, dpi=200)
+    
+    plt.tight_layout(); 
+    plt.show()
 
 # Run the main function
 if __name__ == "__main__":
