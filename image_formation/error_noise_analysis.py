@@ -109,7 +109,7 @@ def plot_all_one_view(samp_freq_hz: float, bits: int = num_bits):
 
 
     # metrics vs clean sampled signal
-    print("\nMETRICS @ {:.1f} Hz".format(samp_freq_hz))
+    print("\nMetrics @ {:.1f} Hz".format(samp_freq_hz))
     # continuous noisy vs clean
     print("Noisy  vs clean:  MSE={:.5f}  RMSE={:.5f}  PSNR={:.2f} dB" .format(mse(s_noisy, s_s), rmse(s_noisy, s_s), psnr(s_noisy, s_s, peak=max_signal)))
     # quantized vs clean

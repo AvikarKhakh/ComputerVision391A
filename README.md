@@ -33,7 +33,11 @@ This exercise focused on simulating the effects of lens aperture parameters, suc
 - **Simulation**: Used mathematical models to simulate the effects of changing these parameters.
 
 ### Reflection
-This exercise gave me insight into the physics behind camera optics and how they can impact image quality. I found it interesting to see how small changes in aperture size could significantly affect the sharpness of objects at different distances. This knowledge is crucial for designing camera systems and understanding real-world photography. In the output plots, I show the different ideal aperture diamter measurements for the respective focal lengths through marking black dots on the liens. 
+This exercise gave me insight into the physics behind camera optics and how they can impact image quality. 
+I found it interesting to see how small changes in aperture size could significantly affect the sharpness of objects at 
+different distances. This knowledge is crucial for designing camera systems and understanding real-world photography. 
+In the output plots, I show the different ideal aperture diamter measurements for the respective focal lengths through 
+marking black dots on the liens. 
 
 ## Access Output
 image_formation/images/exercise2_plots.png
@@ -42,14 +46,18 @@ image_formation/images/exercise2_plots.png
 
 ## Exercise 3: Sampling and Quantization
 ### Description
-In this exercise, I explored the concepts of sampling and quantization, which are fundamental to converting continuous signals into digital images. I analyzed how sampling frequency and bit depth can affect the quality of the reconstructed signal.
+In this exercise, I explored the concepts of sampling and quantization, which are fundamental to converting continuous signals 
+into digital images. I analyzed how sampling frequency and bit depth can affect the quality of the reconstructed signal.
 
 ### Key Concepts
 - **Sampling Frequency**: Determines how often the signal is sampled over time.
 - **Quantization**: Maps continuous frequency values to discrete levels based on the number of bits.
 
 ### Reflection
-This exercise gave me a better understanding of the trade-offs between resolution, storage, and quality in digital imaging. It was  interesting to observe how insufficient sampling frequency could lead to aliasing, making the importance of the Nyquist-Shannon theorem clear. I included two plots in my output, one with the original sampling at 8.0 Hz and then on the right side shows the 3-bit quantization plot. 
+This exercise gave me a better understanding of the trade-offs between resolution, storage, and quality in digital imaging. 
+It was  interesting to observe how insufficient sampling frequency could lead to aliasing, making the importance of the 
+Nyquist-Shannon theorem clear. I included two plots in my output, one with the original sampling at 8.0 Hz and then on the 
+right side shows the 3-bit quantization plot. 
 
 ### Conclusion Questions from Assignment
 1. Reasonable sampling frequency: 
@@ -66,7 +74,10 @@ image_formation/images/exercise3_8Hz_3bits.png
 
 ## Exercise 4: Noise and Error Analysis
 ### Description
-The final exercise involved analyzing the effects of noise on signals and quantifying the error during sampling and quantization. I added Gaussian noise to signals and calculated metrics such as Mean Squared Error, Root Mean Squared Error, and Peak Signal Noise Ratio to evaluate the quality of the processed signals. Additionally, sampled, quantize, and plotted the noise signal similarly to exercise three.
+The final exercise involved analyzing the effects of noise on signals and quantifying the error during sampling and quantization. 
+I added Gaussian noise to signals and calculated metrics such as Mean Squared Error, Root Mean Squared Error, and 
+Peak Signal Noise Ratio to evaluate the quality of the processed signals. Additionally, sampled, quantize, and 
+plotted the noise signal similarly to exercise three.
 
 ### Key Concepts
 - **Gaussian Noise**: Simulated random noise to mimic real-world imperfections in the model.
@@ -76,7 +87,11 @@ The final exercise involved analyzing the effects of noise on signals and quanti
   - **PSNR (Peak Signal-to-Noise Ratio)**: Evaluates the quality of the signal relative to its peak value.
 
 ### Reflection
-This exercise emphasized the importance of error analysis within image processing. By visualizing the noisy and quantized signals, I gained a better understanding of how noise impacts signal fidelity. The use of metrics like PSNR provided a quantitative way to compare different techniques in image processing. I decided to plot everything in one view with three different plots that build off of one another to show first the continous clean vs noisy, then sampling at 8.0 Hz (noisy), and lastly the quantization of the noisy samples.
+This exercise emphasized the importance of error analysis within image processing. By visualizing the noisy and quantized signals, 
+I gained a better understanding of how noise impacts signal fidelity. The use of metrics like PSNR provided a quantitative way to 
+compare different techniques in image processing. I decided to plot everything in one view with three different plots that build 
+off of one another to show first the continous clean vs noisy, then sampling at 8.0 Hz (noisy), and lastly the quantization of the 
+noisy samples.
 
 ## Example Console Output (varies)
 METRICS @ 8.0 Hz
@@ -89,6 +104,9 @@ image_formation/images/exercise4_all_8Hz_3bits.png
 ---------------
 
 ## Conclusion
-Through these exercises, I was able to explore the foundational concepts of computer vision and image processing. Each exercise provided valuable insights into the mathematical and physical aspects that are in modern computer vision systems. This repository serves as a foundational resource regarding Computer Vision for understanding and applying these concepts in close to real-world scenarios.
+Through these exercises, I was able to explore the foundational concepts of computer vision and image processing. 
+Each exercise provided valuable insights into the mathematical and physical aspects that are in modern computer vision systems. 
+This repository serves as a foundational resource regarding Computer Vision for understanding and applying these concepts in close 
+to real-world scenarios.
 
 ---------------
