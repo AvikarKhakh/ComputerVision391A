@@ -15,4 +15,3 @@ This folder contains Python scripts for basic image processing tasks.
 ## Usage (pattern)
 Each script will follow this pattern:
 ```bash
-python <script>.py --input images/input.jpg --output images/output.jpg [options]
