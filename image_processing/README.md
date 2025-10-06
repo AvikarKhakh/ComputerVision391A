@@ -48,6 +48,7 @@ On the full image (Sobel magnitude, float32):
 * Interpretation: the median filter suppresses impulse-noise edges while keeping strong boundaries, producing a much cleaner gradient map.
 
 ### Exercise 2 Results
+<img width="1400" height="434" alt="image" src="https://github.com/user-attachments/assets/289b10eb-0847-4ee2-8216-1a46903aef75" />
 
 ---
 
