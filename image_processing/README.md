@@ -27,8 +27,8 @@ Enhanced a low-contrast X-ray using two global methods:
 Stretching widened the brightness range and made bones/edges clearer with little extra noise. Equalization brightened dark areas more but also added grain. For this X-ray, contrast stretch looked the most natural; equalization was stronger but noisier.
 
 ### Exercise 1 Results
-![Original vs Stretched vs Equalized](image_processing/images/ex1_img_compare.png)
-![Histogram](image_processing/images/ex1_compare.png)
+<img width="6129" height="2534" alt="image" src="https://github.com/user-attachments/assets/2635d980-7625-4699-aeda-69786423d3e3" />
+
 
 ---
 
