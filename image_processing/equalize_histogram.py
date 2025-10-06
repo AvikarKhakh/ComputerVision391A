@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 def equalize_histogram(img: np.ndarray) -> np.ndarray:
-    if img.dtype != np.uint8:
+    if img.dtype != np.uint8: # convert to uint8 if needed
         x = img.astype(np.uint8)
     else:
         x = img
@@ -19,15 +19,17 @@ def equalize_histogram(img: np.ndarray) -> np.ndarray:
     return lut[x]
 
 def main():
+    # parse command line arguments
     ap = argparse.ArgumentParser(description="Histogram equalization (grayscale)")
     ap.add_argument("--input", required=True, help="path to grayscale image")
     ap.add_argument("--output", required=True, help="where to save the equalized image")
     args = ap.parse_args()
 
-    img = cv2.imread(args.input, cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread(args.input, cv2.IMREAD_GRAYSCALE) # uint8
     if img is None:
-        raise SystemExit(f"Could not read image: {args.input}")
+        raise SystemExit(f"Could not read image: {args.input}") # error
 
+    # process
     out = equalize_histogram(img)
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     cv2.imwrite(args.output, out)

@@ -11,6 +11,7 @@ _SY = np.array([[ 1,  2,  1],
                 [ 0,  0,  0],
                 [-1, -2, -1]], dtype=np.float32)
 
+# compute gradient magnitude and angle using Sobel operator
 def calculate_gradient(img: np.ndarray): # img is grayscale, uint8
     x = img.astype(np.float32)
     # compute gradients
@@ -25,6 +26,7 @@ def calculate_gradient(img: np.ndarray): # img is grayscale, uint8
     return mag, ang_deg
 
 def main():
+    # parse command line arguments
     ap = argparse.ArgumentParser(description="Sobel gradient magnitude + angle")
     ap.add_argument("--input", required=True, help="path to grayscale image")
     ap.add_argument("--out-mag", required=True, help="where to save 8-bit magnitude image")
