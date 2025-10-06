@@ -28,7 +28,7 @@ Stretching widened the brightness range and made bones/edges clearer with little
 
 ### Exercise 1 Results
 <img width="6129" height="2534" alt="image" src="https://github.com/user-attachments/assets/2635d980-7625-4699-aeda-69786423d3e3" />
-
+<img width="1800" height="600" alt="image" src="https://github.com/user-attachments/assets/f51356cb-1f48-41b7-a782-b6574ab50c50" />
 
 ---
 
@@ -48,7 +48,6 @@ On the full image (Sobel magnitude, float32):
 * Interpretation: the median filter suppresses impulse-noise edges while keeping strong boundaries, producing a much cleaner gradient map.
 
 ### Exercise 2 Results
-![Noisy | Median 3x3 | Grad (Noisy) | Grad (Median)](image_processing/images/ex2_compare.jpg)
 
 ---
 
