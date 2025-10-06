@@ -72,4 +72,4 @@ Built a small edge-detection pipeline and compared three outputs on the median-f
 * **Canny (50/150)**: most continuous and visually clear edges here, thanks to non-maximum suppression + hysteresis; benefits from the median prefilter.
 
 ### Exercise 3 – Results
-![Sobel (thr=30) | Directional 40–50 deg | Canny 50/150 L2](image_processing/images/ex3_compare.jpg)
+<img width="3600" height="1504" alt="image" src="https://github.com/user-attachments/assets/ab9311f1-a2f7-4a6e-84a2-f0fa034ca4ae" />
